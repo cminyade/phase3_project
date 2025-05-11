@@ -19,7 +19,7 @@ In my analysis, I worked with the following columns `international plan`, `voice
 
 ## Modeling
 
-We will build a model that can predict whether a customer will churn. We will use two models;
+We will build a machine learning model that can predict whether a customer will churn. We will use two models;
 - Logistical Regression which is the baseline linear model
 - Decision Tree Classifier which is the non-parametic model
 Thereafter, we will evaluate the two models and recommend the better one
@@ -52,7 +52,7 @@ weighted avg       0.83      0.86      0.82       667
    macro avg       0.84      0.84      0.84       667
 weighted avg       0.92      0.92      0.92       667
 
-
+![alt text](image.png)
 
 In the above summary, Decision Tree outperforms Logistic Regression, especially in recall.
 Recall tells us how many actual churners we correctly identified, the Decision Tree is a better tool for early intervention. 
@@ -67,6 +67,15 @@ For business stakeholders at SyriaTel:
 - Implement regular monitoring and retraining as customer behavior or offerings change.
 - Apply retention strategies such as discounts, customer service follow-up and promotions to those high-risk customers. 
 -Additional data collection such as customer satisfactory surveys understand what to improve to ensure clients are retained.
+
+### Limitations
+While the Decision Tree performs better, it can be more prone to overfitting. 
+
+The model still misclassifies 27 actual churners (false negatives), which could mean some customers still leave without being flagged.
+
+The data is historical and may not capture future shifts in the current customer behavior, such as changes in pricing or service policies.
+
+Some of the data features may be correlated (e.g., service usage and contract type), and other features might be outdated or less actionable.
 
 ## Conclusion
 In this porject, we built a machine learning classifier to predict customer churn for SYriaTel, which the goal of helping the business identify the cliets likely to churn and introduce customer retention measures such as promotions, discounts and ultimately improving customer support efforts. 
