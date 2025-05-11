@@ -38,8 +38,8 @@ The Logistical regression results are as follows:
    macro avg       0.73      0.58      0.60       667
 weighted avg       0.83      0.86      0.82       667
 
-[[554  12]
- [ 83  18]]
+
+
 
  The Decision Tree Classifier results as follows:
 
@@ -52,10 +52,25 @@ weighted avg       0.83      0.86      0.82       667
    macro avg       0.84      0.84      0.84       667
 weighted avg       0.92      0.92      0.92       667
 
-[[539  27]
- [ 27  74]]
 
- From the data set, the logisctical regression has a higher 
 
+In the above summary, Decision Tree outperforms Logistic Regression, especially in recall.
+Recall tells us how many actual churners we correctly identified, the Decision Tree is a better tool for early intervention. 
+- The recall (0.73 vs 0.18), it was able to correctly capture 73% compared to the 18% by Logistic Regression.
+- Accuracy is also higher in the Decision Tree model, showing it is the model that performs better.
+
+## Recommendation
+For business stakeholders at SyriaTel:
+
+- The recommendation is to use the Decision Tree model to flag high-risk customers (those predicted to churn).
+- Prioritize the metric recall to maximize the number of churners caught.
+- Implement regular monitoring and retraining as customer behavior or offerings change.
+- Apply retention strategies such as discounts, customer service follow-up and promotions to those high-risk customers. 
+-Additional data collection such as customer satisfactory surveys understand what to improve to ensure clients are retained.
 
 ## Conclusion
+In this porject, we built a machine learning classifier to predict customer churn for SYriaTel, which the goal of helping the business identify the cliets likely to churn and introduce customer retention measures such as promotions, discounts and ultimately improving customer support efforts. 
+
+After exploring and evaluating the Logistic model and the Decision Tree model, we found that the Decision Tree model outperforms the logistic regression model in the key metric recall. 
+
+We recommend the use of the Decision Tree model to be able to flag potential churners and intervene early. 
