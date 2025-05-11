@@ -52,7 +52,6 @@ weighted avg       0.83      0.86      0.82       667
    macro avg       0.84      0.84      0.84       667
 weighted avg       0.92      0.92      0.92       667
 
-![alt text](image.png)
 
 In the above summary, Decision Tree outperforms Logistic Regression, especially in recall.
 Recall tells us how many actual churners we correctly identified, the Decision Tree is a better tool for early intervention. 
@@ -78,7 +77,7 @@ The data is historical and may not capture future shifts in the current customer
 Some of the data features may be correlated (e.g., service usage and contract type), and other features might be outdated or less actionable.
 
 ## Conclusion
-In this porject, we built a machine learning classifier to predict customer churn for SYriaTel, which the goal of helping the business identify the cliets likely to churn and introduce customer retention measures such as promotions, discounts and ultimately improving customer support efforts. 
+In this porject, we built a machine learning classifier to predict customer churn for SyriaTel, which the goal of helping the business identify the cliets likely to churn and introduce customer retention measures such as promotions, discounts and ultimately improving customer support efforts. 
 
 After exploring and evaluating the Logistic model and the Decision Tree model, we found that the Decision Tree model outperforms the logistic regression model in the key metric recall. 
 
